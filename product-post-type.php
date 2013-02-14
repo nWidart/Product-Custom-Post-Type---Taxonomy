@@ -151,7 +151,7 @@ class Product_Post_Type {
 		// Code from: http://wpengineer.com/display-post-thumbnail-post-page-overview
 		switch ( $columns ) {
 			case 'price':
-				$price = get_field('price', $post_id);
+				$price = get_field('price_tcc', $post_id);
 				echo '€ ' . $price;
 				break;
 
