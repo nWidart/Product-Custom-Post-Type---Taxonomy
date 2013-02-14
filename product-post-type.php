@@ -43,7 +43,7 @@ class Product_Post_Type {
 		add_action( 'right_now_content_table_end', array( &$this, 'add_cpt_counts' ) );
 
 		// Give the portfolio menu item a unique icon
-		add_action( 'admin_head', array( &$this, 'portfolio_icon' ) );
+		add_action( 'admin_head', array( &$this, 'product_icon' ) );
 	}
 
 	/**
@@ -241,7 +241,7 @@ class Product_Post_Type {
 	 * Displays the custom post type icon in the dashboard
 	 */
 
-	function portfolio_icon() { ?>
+	function product_icon() { ?>
 	    <style type="text/css" media="screen">
 	        #menu-posts-products .wp-menu-image {
 	            background: url(<?php echo plugin_dir_url( __FILE__ ); ?>images/product-icon.png) no-repeat 6px 8px !important;
